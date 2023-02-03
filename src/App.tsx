@@ -24,7 +24,9 @@ function App() {
     <div className="App">
       {boards.map((item) => (
         <>
-          <p key={item.id}>{item.content}</p>
+          <p key={item.id}>
+            <b>{item.title}</b> {item.content} | {item.created_at}
+          </p>
         </>
       ))}
     </div>
